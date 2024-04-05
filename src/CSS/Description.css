@@ -1,0 +1,47 @@
+.popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: 0.5s all ease-in-out;
+}
+  
+.box {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 70vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: black;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    overflow: auto;
+    transition: 0.5s all ease-in-out;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.text{
+    font-size: larger;
+}
+
+.close-button {
+    color: white;
+    font: 25px/100% arial, sans-serif;
+    position: absolute;
+    right: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 pink;
+    top: 5px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.close-button:after {
+    content: '✖'; /* UTF-8 symbol */
+}
